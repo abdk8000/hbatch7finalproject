@@ -6,6 +6,7 @@ body {
 * {
   margin: 0;
 }
+
 .fixed-icon {
   position: fixed;
   left: 10px;
@@ -21,9 +22,13 @@ body {
 }
 .fixed-icon a {
   display: block;
-  margin: 30px 15px;
+  margin: 15px 15px;
   font-size: 20px;
-  color: #7c73d1;
+  color: #fff;
+  padding: 8px 8px 8px 8px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  text-align: center;
 }
 
 
@@ -53,12 +58,12 @@ nav ul {
 .menu li a {
   display: block;
   padding: 15px;
-  color: #333;
+  color: #121212;
   text-decoration: none;
 }
 .menu li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  color: #6354c8;
+  color: #ff0000;
   transition: 0.3s;
 }
 .shadow-line {
@@ -66,7 +71,7 @@ nav ul {
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5);
 }
 
-.home-fullscreen-bg {
+.hero-fullscreen-bg {
   top: 0;
   left: 0;
   width: 100%;
@@ -75,29 +80,29 @@ nav ul {
   background-size: cover;
   background-position: center;
 }
-.home {
+.hero {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 80px 100px 100px 100px;
 }
-.home-text {
+.hero-text {
   flex: 1;
   text-align: left;
   padding-bottom: 10px;
-  color: #1f1f1f;
+  color: #121212;
 }
-.home-text h1 {
+.hero-text h1 {
   margin-bottom: 20px;
   letter-spacing: 7px;
-  color: #6354c8;
+  color: #ff0000;
 }
-.home-text p {
+.hero-text p {
   font-size: 20px;
   line-height: 1.5;
 }
-.home-image {
+.hero-image {
   flex: 1;
   text-align: right;
   padding-left: 30px;
@@ -112,14 +117,14 @@ nav ul {
   padding: 0px 150px;
 }
 .about-image {
-  padding: 0;
+  padding-right: 50px;
 }
 .about-name {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
   padding: 10px 0px;
-  color: grey;
+  color: #c9c9c9;
 }
 .social-icons {
   text-align: center;
@@ -141,8 +146,11 @@ nav ul {
 .fa-linkedin {
   color: #0A66C2
 }
+.fa-envelope {
+  color: #c9c9c9;
+}
 .about-text {
-  padding: 20px 0px 0px 50px;
+  padding-top: 20px;
   color: #fff;
 }
 .about-text h1 {
@@ -158,7 +166,7 @@ nav ul {
 }
 .experience-title {
   text-align: center;
-  padding: 30px;
+  padding: 30px 0px 50px 0px;
 }
 .experience-list {
   display: flex;
@@ -170,7 +178,7 @@ nav ul {
   background-color: #fff;
   text-align: center;
   margin: 15px;
-  border: #6354c8 2px solid;
+  border: #ff0000 2px solid;
   border-radius: 10px;
 }
 .experience img {
@@ -184,13 +192,13 @@ nav ul {
 }
 .experience p {
   font-size: 16px;
-  color: #333;
+  color: #121212;
   padding: 0px 20px;
 }
 
 #education-section {
-  background-color: #121212;
-  color: #fff;
+  background-color: #fff;
+  color: #121212;
   padding: 30px 150px;
 }
 .edu-text {
@@ -209,15 +217,18 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 150px;
+  padding: 30px 150px 50px 150px;
+  background-color: #121212;
+  color: #fff;
 }
 
 .skill {
   width: 200px;
   height: 200px;
-  background-color: #f1f1f1;
-  margin: 30px 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 30px;
   border-radius: 10px;
+  padding: 10px 40px;
 }
 .skill img {
   width: 100%;
@@ -266,7 +277,7 @@ nav ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
   font-size: 24px;
   text-align: center;
   letter-spacing: 5px;
@@ -275,7 +286,7 @@ nav ul {
 }
 #interest-title {
   position: absolute;
-  top: 397vh;
+  top: 396vh;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
@@ -287,18 +298,21 @@ nav ul {
 }
 
 #award-section {
-  padding: 30px 150px;
-  background-color: #C0C0C0;
+  height: 100vh;
+  padding: 0px 150px;
+  background-image: url("../Images/awardbg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 #award-section h1 {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 30px 150px;
 }
 .achievement {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -322,14 +336,6 @@ nav ul {
 .fa-trophy {
   color: #FFD700;
 }
-.fa-medal {
-  color: #C0C0C0;
-}
-
-footer {
-  padding: 15px 100px;
-  font-size: 12px;
-  text-align: center;
-  background-color: #6354c8;
-  color: #fff;
+.fa-crown {
+  color: #FFD700;
 }
